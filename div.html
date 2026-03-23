@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Html form</title>
+  <style>
+    form { 
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+    }
+  </style>
+</head>
+<body>
+  <form action="list.html" method="get">
+    <label>First name</label>
+    <input type="text" name="first name"> <br><br>
+     <label>Second name</label>
+    <input type="text" name="last name"> <br><br>
+     <label>Email:</label>
+    <input type="email" name="email" required> <br><br>
+     <label>Phone number</label>
+    <input type="tel" name="phone number" pattern="[0-9]{10}"><br><br>
+    Password: <br>
+    <input type="Password" name="Password" required minlength="6"><br><br>
+    age:<br>
+    <input type="number" name="age" required minlength="18" max="120"><br><br>
+    select the language
+    <select>
+      <option value="english">English</option>
+       <option value="french">French</option>
+        <option value="Kinyarwanda">Kinyarwanda</option>
+         <option value="Kiswahili">Kiswahili</option>  
+    </select>
+    <fieldset>
+      <legend>Group one</legend>
+      Fieldset 1A: <input type="" name=""><br><br>
+      Fieldset 1B: <input type="" name=""><br><br>
+      Fieldset 1B: <input type="" name=""><br><br>
+     Fieldset 1B: <input type="" name=""><br><br>
+    </fieldset>
+
+     <fieldset>
+      <legend>Group two</legend>
+      Fieldset 2A: <input type="" name=""><br><br>
+      Fieldset 2B: <input type="" name=""><br><br>
+      Fieldset 2C: <input type="" name=""><br><br>
+     Fieldset 2D: <input type="" name=""><br><br>
+    </fieldset>
+
+    Gender: <br>
+    <input type="radio" name="gender">Male <br>
+    <input type="radio" name="gender">female <br>
+    <input type="radio" name="gender">others<br>
+    Hobbies:<br>
+
+    <input type="checkbox" name="Hobbies">reading <br>
+    <input type="checkbox" name="Hobbies">music <br>
+    <input type="checkbox" name="Hobbies">movies <br>
+    <input type="checkbox" name="Hobbies">sport <br>
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>

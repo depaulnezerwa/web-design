@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>De Paul Nezerwa - Portfolio</title>
+	<style>
+		body {
+			background-color:rgb(34, 34, 17);
+			display: flex;
+			flex-direction: column;
+			flex-grow: grow;
+      		flex-wrap: wrap;
+		}
+		header {
+			display: flex;
+			justify-content: space-between;
+			background-color: rgb(34, 34, 17);;
+			width: 100%;
+			height: fit-content;
+			color: white;
+		}
+		.logo img {
+			border-radius: 50%;
+			height: 50px;
+		}
+		
+		.navbar {
+			display: flex;
+			gap: 30px;
+			padding-right: 30px;
+			align-items: center;
+			text-transform: uppercase;
+		}
+		 a {
+			text-decoration: none;
+			color: grey;
+			font-weight: bold;
+		}
+		a:hover {
+			color: white;
+		}
+		 a:active {
+			color: darkorange;
+		}
+		main {
+			background-color: white;
+			border-radius: 10px;	
+      		box-shadow: 5px 5px 10px rgba(0, 0, 0, 1.0);
+      		font-size: 30px;
+		}
+		#about {
+			text-align: center;
+		}
+		.skill {
+			width: 400px;
+			background-color: grey;
+			border-radius: 10px;
+		}
+		.skill:hover {
+			background-color: black;
+			color: white;
+		}
+		#skills, #projects {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+		}
+		.class {
+			width: 400px;
+			height: fit-content;
+			background-color: rgb(78, 78, 13);
+			border-radius: 10px;
+		}
+		.two a{
+			text-decoration: none;
+			color: grey;
+		}
+		.two a:hover {
+			color: black;
+		}
+		.two a:active {
+			color: whitesmoke;
+		}
+
+		footer {
+			text-align: center;
+		}
+		#contact {
+			background-color: black;
+			color: white;
+			display: flex;
+			flex-direction: column;
+			margin-top: 20px;
+			border-radius: 10px;
+		}
+		#contact a {
+			color: whitesmoke;
+		}
+		#contact a:hover {
+			color: grey;
+		}
+		button {
+			display: block;
+			margin: auto;
+			height: 26px;
+			width: 150px;
+			border-radius: 10px;
+			text-transform: uppercase;
+			border: 2px inset grey;
+		}
+		button:hover {
+			background-color: grey;
+			color: whitesmoke;
+			border: 2px solid white;
+		}
+		input, textarea {
+			border-radius: 10px;
+			display: block;
+			height: 30px;
+			width: 340px;
+		}
+		input:hover, textarea:hover {
+			background-color: black;
+			color: white;
+			border: 1px solid grey;
+		}
+		@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    main {
+    	width: 100%;
+    }
+}
+@media (min-width: 769px) {
+	main {
+		font-size: 36px;
+	}
+	.class, .skill {
+		width: 700px;
+		font-size: 46px;
+	}
+	footer {
+		font-size: 30px;
+	}
+}
+
+	</style>
+</head>
+<body>
+
+	<header>
+		<div class="logo">
+			<img src="bsc.jpg" alt="Logo">
+		</div>
+		<div class="title">
+			<h1>DE PAUL NEZERWA WORLD</h1>
+		</div>
+		<div class="navbar">
+			<a href="#about">About
+			<a href="#skills">Skills</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact">Contact</a>
+		</div>
+	</header>
+	<main>
+		<div id="about">
+			<h2>About Me</h2>
+			<p>I am a student at University of Kigali (UoK), Musanze Campus, pursuing Bachelor's in Computer Science. </p>
+			<p>My goal is to become a professional IoT engineer capable of providing reliable solutions to real world problems, make word smart!</p>
+			
+		</div>
+
+		<div id="skills">
+			<div class="one">
+				<h3>Core Skills</h3>
+				<div class="skill">
+					<p>Problem Solving</p>
+				</div>
+				<div class="skill">
+					<p>Team Collaboration</p>
+				</div>
+				<div class="skill">
+					<p>Cisco Packet Tracer</p>
+				</div>
+				<div class="skill">
+					<p>Fronted Development</p>
+				</div>
+			</div>
+			<div class="two">
+				<h3>Technical Skills</h3>
+				<a href="index.html"><div class="class">
+					<h4>HTML</h4>
+					<p>Sematic and accessible markup</p>
+				</div></a>
+				<a href="index.html"><div class="class">
+					<h4>CSS</h4>
+					<p>Flexbox, box model and responsive layouts</p>
+				</div></a>
+			</div>
+		</div>
+		<div id="projects" >
+			<h3>Projects</h3>
+			<div class="class">
+			<h4>A Coffee Menu</h4>
+			<p>A responsive website of <a href="index.html">Murukali Restaurant</a> </p>
+			<label>Technologies:</label><span>HTML,CSS</span>
+			</div>
+		</div>
+		<div id="contact">
+			<h3>Contact Me</h3>
+			<p>Email: <a  href="mailto:depaulnezerwa@gmail.com"> depaulnezerwa@gmail.com</a> <br> Phone:<a href="tel:+250798965432">+250 798 965 432</a></p>
+
+			<form>
+				<label>Name:
+					<input type="text" name="name" placeholder="Your Full Name">
+				</label>
+				<label>Email:
+					<input type="enmail" name="email" placeholder="Your Email">
+				</label>
+				<label>Message:
+					<textarea cols="40" rows="4" placeholder="Leave Your Message here..."></textarea> <br>
+				</label>
+				<button type="submit">Send A Message</button>
+			</form>
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy;2026 <a href="#">De Paul Nezerwa.</a> All rights reserved.</p>
+	</footer>
+</body>
+</html>

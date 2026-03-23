@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Student Registration Form</title>
+	<style>
+		body {
+			background-color: #339966;
+		}
+		form {
+	  max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: lightgray;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+		}
+		label {
+			font-weight: bold;
+			margin-right: 20px;
+		}
+		button {
+			display:block;
+			margin: 0 auto;
+			background-color: black;
+			color: white;
+			width: 100px;
+			height: 20px;
+				}
+		input {
+			background-color: white;
+			height: 20px;
+		}
+		h1 {
+			text-align: center;
+			margin-bottom: 0;
+		}
+
+	</style>
+</head>
+<body>
+		<h1>Student Registration Form</h1>
+	<form>
+       <label>First name:</label>
+       <input type="text" name="first name" placeholder="Enter your First Name" required> <br><br>
+       <label>Second name:</label>
+       <input type="text" name="last name" placeholder="Enter Your Last Name" required><br><br>
+       <label>Date of Birth:</label>
+       <input type="Date" name="date"> <br><br>
+       <label>Email Id:</label>
+       <input type="email" name="email" placeholder="Enter your Email Id" required><br><br>
+       <label>Mobile No:</label>
+       <input type="tel" name="name" required placeholder="Enter your mobile number"><br><br>
+       <label>Gender:</label>
+        <input type="radio" name="gender">Male 
+        <input type="radio" name="gender">female <br><br>
+       <label>Country:</label>
+       <select>
+       		<option value="select Country">Select Country</option>
+       		<option value="Rwanda">Rwanda</option>
+       		<option value="kenya">Kenya</option>
+       		<option value="drc">DRC</option>
+       		<option value="Burundi">Burundi</option>
+       </select> <br><br>
+       <label>State:</label>
+       <select>
+       		<option>Please select country first</option>
+       </select><br><br>
+       <label>Address:</label>
+       <input type="text" name="Address" placeholder="Enter your Address"><br><br>
+       <label>Pin code:</label>
+       <input type="number" name="pin" minlength="10" placeholder="Enter Your Pin Code"><br><br>
+       <label>City:</label>
+       <input type="text" name="city" placeholder="Enter Your City"> <br><br>
+       <label>District:</label>
+       <select>
+       		<option value="select state">Please select state first</option>
+       </select><br><br>
+       <label>Hobbies:</label>
+       <textarea cols="20" rows="5" placeholder="Enter Your Hobbies"></textarea> <br><br>
+        <button type="submit">Submit</button>
+
+
+
+	</form>
+
+</body>
+</html>
