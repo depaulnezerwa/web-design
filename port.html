@@ -4,165 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>De Paul Nezerwa - Portfolio</title>
-	<style>
-		body {
-			background-color:rgb(34, 34, 17);
-			display: flex;
-			flex-direction: column;
-			flex-grow: grow;
-      		flex-wrap: wrap;
-		}
-		header {
-			display: flex;
-			justify-content: space-between;
-			background-color: rgb(34, 34, 17);;
-			width: 100%;
-			height: fit-content;
-			color: white;
-		}
-		.logo img {
-			border-radius: 50%;
-			height: 50px;
-		}
-		
-		.navbar {
-			display: flex;
-			gap: 30px;
-			padding-right: 30px;
-			align-items: center;
-			text-transform: uppercase;
-		}
-		 a {
-			text-decoration: none;
-			color: grey;
-			font-weight: bold;
-		}
-		a:hover {
-			color: white;
-		}
-		 a:active {
-			color: darkorange;
-		}
-		main {
-			background-color: white;
-			border-radius: 10px;	
-      		box-shadow: 5px 5px 10px rgba(0, 0, 0, 1.0);
-      		font-size: 30px;
-		}
-		#about {
-			text-align: center;
-		}
-		.skill {
-			width: 400px;
-			background-color: grey;
-			border-radius: 10px;
-		}
-		.skill:hover {
-			background-color: black;
-			color: white;
-		}
-		#skills, #projects {
-			text-align: center;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-
-		}
-		.class {
-			width: 400px;
-			height: fit-content;
-			background-color: rgb(78, 78, 13);
-			border-radius: 10px;
-		}
-		.two a{
-			text-decoration: none;
-			color: grey;
-		}
-		.two a:hover {
-			color: black;
-		}
-		.two a:active {
-			color: whitesmoke;
-		}
-
-		footer {
-			text-align: center;
-		}
-		#contact {
-			background-color: black;
-			color: white;
-			display: flex;
-			flex-direction: column;
-			margin-top: 20px;
-			border-radius: 10px;
-		}
-		#contact a {
-			color: whitesmoke;
-		}
-		#contact a:hover {
-			color: grey;
-		}
-		button {
-			display: block;
-			margin: auto;
-			height: 26px;
-			width: 150px;
-			border-radius: 10px;
-			text-transform: uppercase;
-			border: 2px inset grey;
-		}
-		button:hover {
-			background-color: grey;
-			color: whitesmoke;
-			border: 2px solid white;
-		}
-		input, textarea {
-			border-radius: 10px;
-			display: block;
-			height: 30px;
-			width: 340px;
-		}
-		input:hover, textarea:hover {
-			background-color: black;
-			color: white;
-			border: 1px solid grey;
-		}
-		@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
-    main {
-    	width: 100%;
-    }
-}
-@media (min-width: 769px) {
-	main {
-		font-size: 36px;
-	}
-	.class, .skill {
-		width: 700px;
-		font-size: 46px;
-	}
-	footer {
-		font-size: 30px;
-	}
-}
-
-	</style>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootsrap3.3.1/css/bootstrap.min.css">
 </head>
 <body>
 
-	<header>
-		<div class="logo">
+	<header class="container">
+		<div class="col-xs-12 col-md-8">
 			<img src="bsc.jpg" alt="Logo">
 		</div>
-		<div class="title">
+		<div class="col-xs-6 col-md-2">
 			<h1>DE PAUL NEZERWA WORLD</h1>
 		</div>
-		<div class="navbar">
+		<div class="col-xs-6 col-md-2">
 			<a href="#about">About
 			<a href="#skills">Skills</a>
 			<a href="#projects">Projects</a>
@@ -235,5 +88,7 @@
 	<footer>
 		<p>&copy;2026 <a href="#">De Paul Nezerwa.</a> All rights reserved.</p>
 	</footer>
+
+	<script src="https://maxcdn.bootsrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>
